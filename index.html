@@ -1,0 +1,63 @@
+<!DOCTYPE html><html>
+<head>
+  <title>Flirty Questions 😏💖</title>  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 10px;
+      background: #ff6f91;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff3f6c;
+    }
+  </style></head><body><div class="box">
+  <h2 id="question">Ready for a little game? 😏</h2>
+  <button onclick="next()">Start 💕</button>
+</div><script>
+let questions = [
+  "Do you think I’m cute? 😌",
+  "Be honest… would you text me first? 😏",
+  "Would you go on a date with me? 💖",
+  "Coffee date or night walk? ☕🌙",
+  "Would you hold my hand? 🙈",
+  "Are you smiling right now? 😏",
+  "Would you miss me if I disappeared? 💔",
+  "Would you choose me over your phone? 📱😌",
+  "Do you think about me sometimes? 💭",
+  "Last one… do you like me a little? 💕"
+];
+
+let i = 0;
+
+function next() {
+  if(i < questions.length) {
+    document.getElementById("question").innerText = questions[i];
+    i++;
+  } else {
+    document.getElementById("question").innerText = "Hmm… I think I got my answer 😏💖";
+  }
+}
+</script></body>
+</html>
